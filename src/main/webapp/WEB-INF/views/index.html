@@ -18,8 +18,8 @@
     <tbody>
     <tr>
         <td>
-            <select id="citys">
-                <option value="Asia/Ho_Chi_Minh" selected="selected">Ha Noi</option>
+            <select id="city">
+                <option value="Asia/Ho_Chi_Minh" selected="selected">Hanoi</option>
                 <option value="America/Los_Angeles">Washington</option>
                 <option value="Europe/Madrid">Madrid</option>
                 <option value="Asia/Phnom_Penh">Phnom Penh</option>
@@ -37,7 +37,7 @@
 </table>
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#citys").change(function () {
+        $("#city").change(function () {
             var value = this.value;
             $.ajax({
                 type: 'POST',
